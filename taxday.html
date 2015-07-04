@@ -1,0 +1,251 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sample responsive html e-mail</title>
+
+<style>
+
+
+	body {
+		background-color: #e6e6e6;
+		color: #000;
+		font-family: Helvetica, sans-serif;
+		margin: 0 auto;
+		padding: 0;
+		width: 100%;
+	}
+	
+	table {
+		border-collapse: collapse;
+	}
+
+  @media only screen and (max-device-width: 480px), screen and (max-width: 600px){
+  table.mobile_table {
+    display: block; !important;
+    width: 100%; !important;
+    height: auto; !important;
+    }
+
+  td.mobile {
+    display: block; !important;
+    width: 100%;!important;
+    height: auto; !important;
+    } 
+
+  .img_mobile {
+    display: block; !important;
+    width: 100%; !important;
+    height: auto; !important;
+    } 
+
+  .mobile_button {
+    width: 100%; !important;
+    height: auto; !important;
+  }
+}
+
+/* Fake class to add weight to the e-mail, so it is displayed properly and some of the mobile devices */
+  .fake_css {
+    width:100%;
+    display: block;
+    -webkit-text-size-adjust:none;
+    margin: 1em 0;
+    color: black;
+    text-decoration: none;
+    border-bottom: none;
+    background: none;
+    padding-bottom:0px;
+    padding-left:0px;
+    padding-right:0px;
+    background:none;
+    border-bottom:thin;
+    border-bottom-style:double;
+    background-repeat:repeat;
+    border-left-color:#C06;
+    background-attachment:scroll;
+    border:thin;
+    page-break-before:auto;
+    page-break-before:avoid;
+    page-break-inside:inherit;
+    azimuth:center-left;
+    vertical-align:inherit;
+    font-stretch:extra-condensed;
+    font-size-adjust:none;
+    list-style-image: none;
+    counter-reset:none;
+    letter-spacing:normal;
+    empty-cells:inherit;
+    elevation:higher;
+  }
+
+</style>
+</head>
+
+<body bgcolor="#e6e6e6">
+<!-- wrapper table -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      <!-- inner table -->
+      <table width="600" class="mobile_table" align="center" valign="top" cellpadding="0" cellsapacing="0">
+        
+        <!-- links at the top -->
+        <tr>
+          <td align="left" style="font-family: Helvetica; font-size: 8px; color: #bba299"><a href="#">Open Epocrates &amp; get free Starbucks</a><br> Email not displaying clearly? <a href="#" style="text-decoration: none;">Click here</a> to view it online.</td>
+        </tr>
+        
+        <!-- Epocrates logo -->
+        <tr>
+          <td>
+           <table width="100%"  border="0" cellpadding="0" cellsapacing="0" bgcolor="#154d8f">
+           <tr>
+              <td bgcolor="#154d8f" align="center"><img src="http://irinad.siteground.net/email_samples/images/epocrates_logo.gif"
+               class="img_mobile" alt="Epocrates logotype" style="display: block;" width="600" height="72" border="0"></td>
+            </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- Starbucks Card -->
+        <tr><td height="30" bgcolor="#c6cf4d"></td></tr>
+        <tr>
+          <td bgcolor="#c6cf4d" style="font-family: Helvetica; font-size: 28px; color: #000000; font-weight: bold; text-align: center;">Your Tax Day Treat</td>
+        </tr>
+        <tr><td height="24" bgcolor="#c6cf4d"></td></tr>
+        <tr>
+          <td>
+           <table width="100%" border="0" cellpadding="0" cellsapacing="0"><tr>
+              <!--<td bgcolor="#c6cf4d" width="200px"></td>-->
+              <td bgcolor="#c6cf4d" align="center"><img src="http://irinad.siteground.net/email_samples/images/TaxDay_07.gif"
+               style="display: block;" border="0" alt="Epocrates logotype" width="200" height="124"></td>
+              <!--<td bgcolor="#c6cf4d" width="200px"></td>)-->
+            <tr>
+            </table>
+          </td>
+        </tr>
+       <tr><td height="18" bgcolor="#c6cf4d"></td></tr>
+        
+        <!-- Starbucks Card Promo Title-->
+
+        <tr><td height="10" bgcolor="#ffffff"></td></tr>
+
+
+         <!-- Starbucks Card Promo Text-->
+
+         <tr><td 
+         bgcolor="#ffffff" style="font-family: Helvetica, Arial, sans-serif; font-size: 28px; color: #000000; text-align: center;"> 
+          <table cellpadding="0" cellspacing="0">
+          <tr>
+          <td width="3%"> </td>
+          <td> 
+
+         <span style="color: #363535; font-size: 16px; font-weight: 100; line-height: 150%; font-family: Helvetica, Arial, sans-serif;"> 
+         To make your day a little less taxing, we are giving you the perfect excuse to take a break. Simply open your app and get a <b>$5 
+
+         Starbucks card.</b>
+         </span></td>
+          <td width="3%"></td>
+          </td>
+          </tr>
+          
+          </table>
+        </td></tr>
+
+         <!-- Starbucks Card Promo Button -->
+
+         <tr><td height="25" bgcolor="#ffffff"></td></tr>
+         <tr>
+           <td align="center" bgcolor="#ffffff" width="100%">
+             <table width="100%" border="0" cellpadding="0" cellspacing="0"><tr>
+                 <td>
+                  
+                       <table class="mobile_button"  cellpadding="0" cellspacing="0" border="0" width="40%" align="center">
+                           <tr>
+                           <td align="right">
+                           <a href="#"><img src="http://irinad.siteground.net/email_samples/images/left_round_corner.gif" border="0" alt="Left round corner" width="8" height="50" style="display:block;"></a></td>
+                           <td align="center" bgcolor="#f06527" height="50" style="overflow:hidden; padding:0px; margin:0px; text-align:center;">
+                           <span style="color: #ffffff; font-size: 16px; font-weight: 100;font-family:Helvetica, Arial, sans-serif;">Get 5$ cards</span></td>
+                           <td align="left"><a href="#"><img src="http://irinad.siteground.net/email_samples/images/right_round_corner.gif" border="0" alt="Right round corner" style="display:block;" width="8" height="50"></a></td>
+                           </tr>
+                       </table>
+                  </td>
+                  </tr>
+                 </td>
+            </tr>
+            </table>
+            </td>
+
+        </tr>
+        <tr><td height="50" bgcolor="#ffffff"></td></tr>
+
+         <!-- Social icons and AthenaHealth Logo -->
+
+         <tr><td height="16" bgcolor="#e6e6e6"></td></tr>
+                  <tr>
+         <td>
+             <table width="100%" border="0" cellpadding="0" cellsapacing="0"><tr>
+                 <td bgcolor="#e6e6e6" width="116">
+                   <table border="0" cellpadding="0" cellsapacing="0">
+                     <tr>
+                       <td width="29" height="27" align="right">
+                          <a href="#"><img src="http://irinad.siteground.net/email_samples/images/TaxDay_15.gif" style="display: block;" border="0" alt="Facebook" width="24" height="24"></a>
+                       </td>
+                        <td width="29" height="27" align="right">
+                          <a href="#">
+                          <img src="http://irinad.siteground.net/email_samples/images/TaxDay_17.gif"
+                           style="display: block;" border="0" alt="Twitter" width="24" height="24"></a>
+                        </td>
+                       <td width="29" height="27" align="right">
+                          <a href="#"><img src="http://irinad.siteground.net/email_samples/images/TaxDay_19.gif" style="display: block;" border="0" alt="LinkedIn" width="24" height="24"></a>
+                        </td>
+                       <td width="29" height="27" align="right">
+                         <a href="#"><img src="http://irinad.siteground.net/email_samples/images/TaxDay_21.gif" style="display: block;" border="0" alt="YouTube" width="24" height="24"></a>
+                        </td>
+                     </tr>
+                   </table>
+                 </td>
+
+                 <td bgcolor="#e6e6e6" width="316"></td>
+                 <td bgcolor="#e6e6e6" width="168"  align="right">
+                   <table border="0" cellpadding="0" cellsapacing="0">
+                     <tr>
+                       <td>
+                        <a href="#">
+                          <img src="http://irinad.siteground.net/email_samples/images/TaxDay_24.gif" style="display: block;" border="0" alt="AthenaHealth" width="168" height="27">
+                          </a>
+                      </td>
+                     </tr>
+                   </table>
+                 </td>
+            </tr>
+            </table>
+            </td>
+
+        </tr>
+
+         <!-- Ruler -->
+         <tr><td height="1" bgcolor="#f5f5f5"></td></tr>
+
+         <!-- Footer text-->
+         <tr><td height="30" bgcolor="#e6e6e6"></td></tr>
+         <tr><td align="left" style="font-family: Helvetica; font-size: 10px; color: #4e535e;">You are receiving this email because you have opted into receiving Epocrates news/emails. <br><br> 
+
+         You must launch the Epocrates app on your mobile device to qualify. After launching your app, you'll receive a Starbucks Card by e-mail in 2-4 weeks. Offer expires at 11:59PM EST on April 19, 2015. <br><br> 
+
+         The Starbucks word mark and the Starbucks Logo are trademarks of Starbucks Corporation. Starbucks is also the owner of the Copyrights in the Starbucks Logo and Starbucks Card designs. All rights reserved. Starbucks is not a participating partner or sponsor in this offer. <br><br> 
+
+         <a href="#" style="text-decoration: none;"> Update your email address</a> | <a href="#" style="text-decoration: none;">  Privacy policy </a> | <a href="#" style="text-decoration: none;">  Unsubscribe </a> <br><br> 
+
+         Copyright &copy;2015 Epocrates, Inc. All Rights Reserved <br> 50 Hawthorne Street, San Francisco, CA 94105 <a href="http://www.epocrates.com" style="text-decoration: none;"></td></tr>
+
+         <!-- Extra grey padding on the bottom -->
+         <tr><td height="25" bgcolor="#e6e6e6"></td></tr>
+      </table>
+      
+      <!-- end inner table --></td>
+  </tr>
+</table>
+<!-- end wrapper table -->
+</body>
+</html>

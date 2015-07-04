@@ -1,0 +1,272 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sample responsive html e-mail</title>
+
+<style>
+
+
+	body {
+		background-color: #e6e6e6;
+		color: #000;
+		font-family: Helvetica, sans-serif;
+		margin: 0 auto;
+		padding: 0;
+		width: 100%;
+	}
+	
+	table {
+		border-collapse: collapse;
+	}
+
+  /* Media Queries */
+
+@media only screen and (max-device-width: 480px), screen and (max-width: 600px){
+	table.mobile_table {
+    display: block; !important;
+	  width: 100%; !important;
+	  height: auto;	!important;
+		}
+
+	td.mobile {
+    display: block; !important;
+	  width: 100%;!important;
+	  height: auto;	!important;
+		} 
+
+	.img_mobile {
+    display: block; !important;
+	  width: 100%; !important;
+	  height: auto; !important;
+		}	
+
+  .mobile_button {
+    width: 100%; !important;
+    height: auto; !important;
+  }
+}
+
+  /* Fake class to add weight to the e-mail, so it is displayed properly and some of the mobile devices */
+  .fake_css {
+    width:100%;
+    display: block;
+    -webkit-text-size-adjust:none;
+    margin: 1em 0;
+    color: black;
+    text-decoration: none;
+    border-bottom: none;
+    background: none;
+    padding-bottom:0px;
+    padding-left:0px;
+    padding-right:0px;
+    background:none;
+    border-bottom:thin;
+    border-bottom-style:double;
+    background-repeat:repeat;
+    border-left-color:#C06;
+    background-attachment:scroll;
+    border:thin;
+    page-break-before:auto;
+    page-break-before:avoid;
+    page-break-inside:inherit;
+    azimuth:center-left;
+    vertical-align:inherit;
+    font-stretch:extra-condensed;
+    font-size-adjust:none;
+    list-style-image: none;
+    counter-reset:none;
+    letter-spacing:normal;
+    empty-cells:inherit;
+    elevation:higher;
+  }
+
+</style>
+</head>
+
+<body bgcolor="#e6e6e6">
+<!-- wrapper table -->
+<table width="100%" cellpadding="0" cellspacing="0" style="border: 0; border-collapse: collapse;">
+  <tr>
+    <td>
+      <!-- inner table, 600px wide -->
+      <table width="600" class="mobile_table" align="center" valign="top" cellpadding="0" cellspacing="0" border="0">
+        
+        <!-- links at the top -->
+        <tr>
+          <td align="left" style="font-family: Helvetica; font-size: 8px; color: #bba299;"><a href="#">Email not displaying clearly? <a href="#" style="text-decoration: none;">Click here</a> to view online.</td>
+        </tr>
+        
+        <!-- Epocrates logo -->
+        <tr>
+          <td>
+           <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border: 0; border-collapse: collapse;">
+           <tr>
+              <td align="center" width="100%">
+              <img src="http://irinad.siteground.net/email_samples/images/profile_logo.gif"
+               alt="Epocrates logotype" class="img_mobile" width="600" height="204" border="0" style="display:block;"></td>
+            </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- Tables with names (each 50 %) -->
+        <tr>
+          <td height="15" width="100%" bgcolor="#ffffff"></td></tr>
+        <tr>
+          <td  bgcolor="#ffffff" width="100%">
+           <table width="100%" border="0" cellpadding="0" cellspacing="0">
+             <tr>
+               <td width="3%"></td>
+                  <td width="47%" class="mobile" >
+                       <table border="0" cellpadding="0" cellspacing="0">
+                         <tr><td><span style="color: #73943a;">DR. <span>XXX XXXX</span></span></td></tr>
+                         <tr><td><span>{SpecialityX}</span></td></tr>
+                         <tr><td>Member Since <span>{XX} {YearX}</span></td></tr>
+                         <tr><td></td></tr>
+                         <tr><td><span><b>X</b></span> members viewed your profile last month</td></tr>
+                       </table>
+               </td>
+               <td width="47%" class="mobile" >
+                   <table  border="0" cellpadding="0" cellspacing="0">
+                     <tr><td>Practice name: <span><b>{XXXX}</b></span></td></tr>
+                     <tr><td>Accepting new patiens: <span><b>{XXXX}</b></span></td></tr>
+                     <tr><td>Practice zip code: <span><b>{XXXX}</b></span></td></tr>
+                     <tr><td>Primary master: <span><b>{XXXX}</b></span></td></tr>
+                     <tr><td>Secondary master: <span><b>{XXXX}</b></span></td></tr>
+                   </table>
+              </td>
+              <td width="3%"></td>
+              </tr>
+           </table>
+          </td>
+        </tr>
+        
+       
+
+        <tr><td height="25" bgcolor="#ffffff"></td></tr>
+                <tr>
+                  <td>
+                  <!-- Update Profile Button -->
+                    <table width="100%" bgcolor="#ffffff" cellpadding="0" cellspacing="0">
+                      <tr>
+                      <td align="center">
+                           <table cellpadding="0" cellspacing="0" border="0" align="center" width="60%" class="mobile_button">
+                             <tr>
+                             <td align="right"><a href="#">
+                             
+                             <img src="http://irinad.siteground.net/email_samples/images/profile_left_corner.gif" border="0" alt="Left round corner" width="26" height="43" style="display: block;"></a></td>
+                             <td align="center" height="43" bgcolor="#dc8824"><span style="color: #ffffff; font-size: 16px; font-weight: 100; line-height: 150%;"; font-family:Helvetica, Arial, sans-serif;>Update your profile</span></td>
+                             <td align="left"><a href="#"><img src="http://irinad.siteground.net/email_samples/images/profile_right_corner.gif" style="display: block;" border="0" alt="Right round corner" width="26" height="43"></a></td>
+                             </tr>
+                         </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                 </tr>
+        <tr><td height="25" bgcolor="#ffffff"></td></tr>
+
+
+         <!-- Numbered Instructions -->
+
+         <tr>
+         <td>
+          <table width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+          <td width="3%" bgcolor="#ffffff"></td>
+           <td bgcolor="#ffffff">
+             <table width="70%" border="0" cellpadding="5" cellspacing="0" align="left">
+                 <tr>
+                 <td colspan="2" align="left">
+                   <b>How to update your profile from your iPhone</b>
+                 </td></tr>
+                 <tr>
+                    <td width="10%"><img src="http://irinad.siteground.net/email_samples/images/1.gif" style="display: block;" border="0" alt="1" width="28" height="28"></td>
+                    <td> Open Provider Directory</td>
+                    </tr>
+                 <tr>
+                    <td><img src="http://irinad.siteground.net/email_samples/images/2.jpg" style="display: block;" border="0" alt="2" width="28" height="28"></td>
+                    <td>Tap the <img src="http://irinad.siteground.net/email_samples/images/user.gif" border="0" style="display: inline-block;" alt="user icon" width="20" height="19"> icon at the top left</td></tr>
+                 <tr>
+                   <td><img src="http://irinad.siteground.net/email_samples/images/3.jpg" border="0" alt="3" width="28" height="28"></td>
+                   <td>Find and update your profile</td>
+                 </tr>
+               </table>
+             </td>
+           </tr>
+         </table>
+         </td>
+         </tr>
+
+
+        <tr><td height="15" bgcolor="#ffffff"></td></tr>
+
+         <!-- Social icons and AthenaHealth Logo -->
+
+         <tr><td height="16" bgcolor="#e6e6e6"></td></tr>
+                  <tr>
+         <td>
+             <table width="100%" border="0" cellpadding="0" cellspacing="0"><tr>
+                 <td bgcolor="#e6e6e6" width="116">
+                   <table border="0" cellpadding="0" cellspacing="0">
+                     <tr>
+                       <td width="29" height="27" align="right">
+                          <a href="#"><img src="http://irinad.siteground.net/email_samples/images/TaxDay_15.gif" style="display: block;" border="0" alt="Facebook" width="24" height="24"></a>
+                       </td>
+                        <td width="29" height="27" align="right">
+                          <a href="#">
+                          <img src="http://irinad.siteground.net/email_samples/images/TaxDay_17.gif"
+                           style="display: block;" border="0" alt="Twitter" width="24" height="24"></a>
+                        </td>
+                       <td width="29" height="27" align="right">
+                          <a href="#"><img src="http://irinad.siteground.net/email_samples/images/TaxDay_19.gif" style="display: block;" border="0" alt="LinkedIn" width="24" height="24"></a>
+                        </td>
+                       <td width="29" height="27" align="right">
+                         <a href="#"><img src="http://irinad.siteground.net/email_samples/images/TaxDay_21.gif" style="display: block;" border="0" alt="YouTube" width="24" height="24"></a>
+                        </td>
+                     </tr>
+                   </table>
+                 </td>
+
+                 <!-- WHAT WE DISCUSSED HERE??? -->
+                 <td bgcolor="#e6e6e6" width="316"></td>
+                 <td bgcolor="#e6e6e6" width="168"  align="right">
+                   <table border="0" cellpadding="0" cellspacing="0">
+                     <tr>
+                       <td>
+                        <a href="#">
+                          <img src="http://irinad.siteground.net/email_samples/images/TaxDay_24.gif" style="display: block;" border="0" alt="AthenaHealth" width="168" height="27">
+                          </a>
+                      </td>
+                     </tr>
+                   </table>
+                 </td>
+            </tr>
+            </table>
+            </td>
+
+        </tr>
+
+         <!-- Ruler -->
+         <tr><td height="2" bgcolor="#f5f5f5"></td></tr>
+
+         <!-- Footer text-->
+         <tr><td height="30" bgcolor="#e6e6e6"></td></tr>
+         <tr><td align="left" bgcolor="#e6e6e6" style="font-family: Helvetica; font-size: 10px; color: #4e535e;">You are receiving this email because you have opted into receiving Epocrates news/emails. <br><br> 
+
+
+         <a href="#" style="text-decoration: none;"> Update your email address</a> | <a href="#" style="text-decoration: none;">  Privacy policy </a> | <a href="#" style="text-decoration: none;">  Unsubscribe </a> <br><br> 
+
+         Copyright &copy;2015 Epocrates, Inc. All Rights Reserved <br> 50 Hawthorne Street, San Francisco, CA 94105 <a href="http://www.epocrates.com" style="text-decoration: none;"></td></tr>
+
+         <!-- Extra grey padding on the bottom -->
+         <tr><td height="25" bgcolor="#e6e6e6"></td></tr>
+      </table>
+      
+      <!-- end inner table --></td>
+  </tr>
+</table>
+<!-- end wrapper table -->
+</body>
+</html>
